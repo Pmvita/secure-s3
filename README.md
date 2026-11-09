@@ -35,6 +35,10 @@ CloudTrail is **opt-in**. A trail plus a log bucket is extra moving parts and no
 
 
 
+## Status
+
+**Code complete.** Modules harden one data bucket (PAB, AES-256, HTTPS-only, versioning). Live `terraform apply` / `destroy` is **pending AWS credentials** on the demo machine — do not claim a live bucket until you have run the steps below.
+
 ## Getting started
 
 ```bash
@@ -51,6 +55,8 @@ Opt-in trail:
 ```hcl
 enable_cloudtrail = true
 ```
+
+Destroy the same day if you enable CloudTrail.
 
 
 
